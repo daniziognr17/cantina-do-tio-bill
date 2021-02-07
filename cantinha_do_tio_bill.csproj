@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DE190F7-CAB0-4849-A020-ED2EDC9EB3E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cantinha_do_tio_bill</RootNamespace>
+    <AssemblyName>cantinha_do_tio_bill</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutenticacaoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutenticacaoCliente.Designer.cs">
+      <DependentUpon>AutenticacaoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelarPedido.Designer.cs">
+      <DependentUpon>CancelarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClientePedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientePedidos.Designer.cs">
+      <DependentUpon>ClientePedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DadosArmazenados.cs" />
+    <Compile Include="ExcluirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirCliente.Designer.cs">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirQuentinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirQuentinha.Designer.cs">
+      <DependentUpon>ExcluirQuentinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovaQuentinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovaQuentinha.Designer.cs">
+      <DependentUpon>NovaQuentinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovoCliente.Designer.cs">
+      <DependentUpon>NovoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovoPedido.Designer.cs">
+      <DependentUpon>NovoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelAdministrativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelAdministrativo.Designer.cs">
+      <DependentUpon>PainelAdministrativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelCliente.Designer.cs">
+      <DependentUpon>PainelCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quentinha.cs" />
+    <Compile Include="RelatorioFinancas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioFinancas.Designer.cs">
+      <DependentUpon>RelatorioFinancas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioPedidos.Designer.cs">
+      <DependentUpon>RelatorioPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioCliente.Designer.cs">
+      <DependentUpon>RelatorioCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioQuentinhas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioQuentinhas.Designer.cs">
+      <DependentUpon>RelatorioQuentinhas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutenticacaoCliente.resx">
+      <DependentUpon>AutenticacaoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelarPedido.resx">
+      <DependentUpon>CancelarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientePedidos.resx">
+      <DependentUpon>ClientePedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirCliente.resx">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirQuentinha.resx">
+      <DependentUpon>ExcluirQuentinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovaQuentinha.resx">
+      <DependentUpon>NovaQuentinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovoCliente.resx">
+      <DependentUpon>NovoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovoPedido.resx">
+      <DependentUpon>NovoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelAdministrativo.resx">
+      <DependentUpon>PainelAdministrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelCliente.resx">
+      <DependentUpon>PainelCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RelatorioFinancas.resx">
+      <DependentUpon>RelatorioFinancas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioPedidos.resx">
+      <DependentUpon>RelatorioPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioCliente.resx">
+      <DependentUpon>RelatorioCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioQuentinhas.resx">
+      <DependentUpon>RelatorioQuentinhas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
